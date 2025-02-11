@@ -1,11 +1,10 @@
 # HungarianMosaicBuilder
 Ce projet permet de générer une mosaïque à partir d’une image principale et d’une banque d’images. L'algorithme divise l'image principale en petites sections et sélectionne les meilleures correspondances dans la banque d'images en fonction de la similarité colorimétrique.
 
-Image d'origine :
-![Image initiale](starwars3.jpg)
-
-Image après transformation en mosaïque :
-![Mosaïque générée](image.png)
+<p align="center">
+    <img src="starwars3.jpg" width="150"> 
+    <img src="image.png" width="150">
+</p>
 
 ## Librairies utilisées
 - `glob` : Parcours des fichiers de la banque d’images.
@@ -38,10 +37,9 @@ Ajuster la taille des tuiles (`50x50` par défaut) pour influencer la granularit
 ### Nombre de tuiles
 Une limite peut être appliquée sur la quantité d’images chargées (ex. 600 max). Modifiable selon les besoins.
 
-### Placer vos images
+### Banque d'images
 - Banque d’images dans `splash/` (ou modifier la variable `banque_path`).
 - Image principale (ex. `starwars3.jpg`) dans le même dossier que le script.
-
 
 Le fichier `munkres.jpg` sera généré avec la mosaïque finale.
 
